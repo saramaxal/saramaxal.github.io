@@ -1,0 +1,43 @@
+html
+    box-sizing: border-box
+    position: relative
+    scroll-behavior: smooth
+
+*
+    box-sizing: inherit
+
+body
+    min-width: 320px
+    min-height: 100vh
+    @include ubuntu-regular
+    font-size: 14px
+    background-color: $YELLOW
+    color: $BROWN_BLACK
+
+img,
+svg
+    max-width: 100%
+    max-height: 100%
+    height: auto
+
+a
+    cursor: pointer
+    text-decoration: 0
+
+ul
+    padding: 0
+    margin: 0
+    list-style: none
+
+h1,
+h2,
+h3,
+p
+    margin: 0
+
+.container
+    $padding: 15px
+    min-width: 320px
+    margin: 0 auto
+    padding-right: var(--padding)
+    padding-left: var(--padding)
