@@ -342,25 +342,25 @@ template {
   display: none;
 }
 
-/* ubuntu-mono-regular - cyrillic_latin */
+/* ubuntu-regular - latin */
 @font-face {
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-display: swap;
-  font-family: "Ubuntu Mono";
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ubuntu-mono-v17-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/ubuntu-mono-v17-cyrillic_latin-regular.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url("../fonts/ubuntu-v20-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* ubuntu-mono-700 - cyrillic_latin */
+/* ubuntu-700 - latin */
 @font-face {
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-display: swap;
-  font-family: "Ubuntu Mono";
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/ubuntu-mono-v17-cyrillic_latin-700.woff2") format("woff2"), url("./fonts/ubuntu-mono-v17-cyrillic_latin-700.ttf") format("truetype");
-  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url("../fonts/ubuntu-v20-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 html {
   box-sizing: border-box;
@@ -375,7 +375,7 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: "Ubuntu Mono";
+  font-family: "Ubuntu Mono", sans-serif;
   font-weight: 400;
   font-size: 14px;
   background-color: #F1DCA5;
@@ -409,8 +409,89 @@ p {
 }
 
 .container {
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
-  padding-right: var(--padding);
-  padding-left: var(--padding);
+  padding: 40px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header__container {
+  gap: 24px;
+}
+
+.header__title {
+  font-family: "Ubuntu Mono", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #812B44;
+  letter-spacing: 3.84px;
+}
+
+.header__nav {
+  font-family: "Ubuntu Mono", sans-serif;
+  font-weight: 700;
+  color: #812B44;
+  font-size: 18px;
+}
+.header__nav .nav__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 175px;
+}
+.header__nav .nav__items .item {
+  line-height: 30px;
+}
+
+.header__hero-name {
+  font-size: 24px;
+}
+
+.header__hero-city {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.hero-city_text {
+  padding: 8px;
+}
+
+.header__image-photo {
+  background: url("../image/i.png") no-repeat center/contain;
+  height: 204px;
+  width: 204px;
+}
+
+.header__info {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.header__info div {
+  align-self: center;
+  text-align: center;
+}
+
+.info__title {
+  color: #812B44;
+  font-family: "Ubuntu Mono", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.info__text {
+  padding: 8px;
+}
+
+.header__arrows-down {
+  color: #812B44;
 }/*# sourceMappingURL=main.css.map */

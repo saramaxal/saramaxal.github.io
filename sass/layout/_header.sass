@@ -1,0 +1,59 @@
+.header__container
+    gap: 24px
+
+.header__title
+    @include ubuntu-bold
+    font-size: 24px
+    color: $RED
+    letter-spacing: 3.84px
+
+.header__nav
+    @include ubuntu-bold
+    color: $RED
+    font-size: 18px
+
+    .nav__items
+        display: flex
+        flex-wrap: wrap
+        gap: 24px
+        max-width: 175px
+
+        .item
+            line-height: 30px
+
+.header__hero-name
+    font-size: 24px
+
+.header__hero-city
+    display: flex
+    gap: 8px
+    align-items: center
+    font-size: 18px
+
+.hero-city_text
+    padding: 8px
+
+.header__image-photo
+    background: url("../image/i.png") no-repeat center / contain
+    height: 204px
+    width: 204px
+
+.header__info
+    display: flex
+    gap: 8px
+    flex-direction: column
+
+    div
+        align-self: center
+        text-align: center
+
+.info__title
+    color: $RED
+    @include ubuntu-bold
+    font-size: 18px
+
+.info__text
+    padding: 8px
+
+.header__arrows-down
+    color: $RED
