@@ -413,7 +413,6 @@ p {
   margin: 0 auto;
   padding: 40px 15px;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -422,8 +421,20 @@ p {
   height: 24px;
 }
 
+.arrows-top {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #F1DCA5;
+}
+
 .header__container {
   gap: 24px;
+  align-items: center;
 }
 
 .header__title {
@@ -452,6 +463,11 @@ p {
 
 .header__hero-name {
   font-size: 24px;
+  font-family: "Ubuntu Mono", sans-serif;
+  font-weight: 700;
+  width: 160px;
+  letter-spacing: 3.84px;
+  text-align: center;
 }
 
 .header__hero-city {
@@ -461,7 +477,7 @@ p {
   font-size: 18px;
 }
 
-.hero-city_text {
+.hero-city__text {
   padding: 8px;
 }
 
@@ -494,4 +510,46 @@ p {
 
 .header__arrows-down {
   color: #812B44;
+}
+
+.skills {
+  background-color: #61764E;
+}
+
+.skills__container {
+  gap: 40px;
+}
+
+.skills__block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 16px;
+  width: 210px;
+}
+
+.skills__title {
+  background-color: #453A34;
+  color: #F1DCA5;
+  border-radius: 10px;
+  padding: 8px;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.skills__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skills__skill {
+  background-color: #F1DCA5;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.skills__arrows-top {
+  background-color: #453A34;
+  color: #F1DCA5;
 }/*# sourceMappingURL=main.css.map */

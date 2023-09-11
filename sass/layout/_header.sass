@@ -1,5 +1,9 @@
+.header
+    background-color: $YELLOW
+
 .header__container
     gap: 24px
+    align-items: center
 
 .header__title
     @include ubuntu-bold
@@ -23,6 +27,10 @@
 
 .header__hero-name
     font-size: 24px
+    @include ubuntu-bold
+    width: 160px
+    letter-spacing: 3.84px
+    text-align: center
 
 .header__hero-city
     display: flex
@@ -30,7 +38,7 @@
     align-items: center
     font-size: 18px
 
-.hero-city_text
+.hero-city__text
     padding: 8px
 
 .header__image-photo
