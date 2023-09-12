@@ -643,4 +643,47 @@ h3 {
 .experience__arrows-top {
   background-color: #453A34;
   color: #F1DCA5;
+}
+
+.contacts {
+  background-color: #453A34;
+}
+
+.contacts__container {
+  padding-left: 13px;
+  padding-right: 13px;
+  gap: 40px;
+  align-items: center;
+  color: #F1DCA5;
+}
+
+.contacts__title {
+  color: #EE873C;
+}
+
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.contacts__text {
+  color: #F1DCA5;
+}
+
+.contacts__upd {
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.contacts__arrows-top {
+  background-color: #EE873C;
+  color: #453A34;
 }/*# sourceMappingURL=main.css.map */
