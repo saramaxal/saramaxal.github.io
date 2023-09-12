@@ -3,6 +3,8 @@
 
 .skills__container
     gap: 40px
+    padding-left: 40px
+    padding-right: 40px
 
 .skills__block
     display: flex
@@ -15,10 +17,8 @@
 .skills__title
     background-color: $BROWN_BLACK
     color: $YELLOW
-    border-radius: 10px
-    padding: 8px
+    @extend %round
     width: max-content
-    font-size: 18px
     @include ubuntu-bold
     letter-spacing: 1.8px
 
@@ -29,8 +29,7 @@
 
 .skills__skill
     background-color: $YELLOW
-    border-radius: 10px
-    padding: 8px
+    @extend %round
 
 .skills__hard-items
     letter-spacing: 1.4px

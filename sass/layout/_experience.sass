@@ -1,0 +1,51 @@
+.experience
+    background-color: $YELLOW
+
+.experience__container
+    gap: 40px
+    align-items: center
+    padding-left: 40px
+    padding-right: 40px
+
+.accent
+    color: $RED
+
+.experience__card
+    display: flex
+    flex-direction: column
+    gap: 16px
+    color: $YELLOW
+    align-items: center
+
+.card__title
+    @extend %round
+    @include ubuntu-regular
+    background-color: $BROWN
+    width: max-content
+
+.card__resurces
+    display: flex
+    flex-wrap: wrap
+    gap: 8px 16px
+
+.card__show
+    display: flex
+    gap: 16px
+
+.card__resurce
+    @extend %round
+    background-color: $GREEN
+
+.item_button
+    @extend %round
+    background-color: $BROWN
+
+.experience__other-items
+    display: flex
+    gap: 16px
+    flex-direction: column
+    list-style: disc
+
+.experience__arrows-top
+    background-color: $BROWN_BLACK
+    color: $YELLOW

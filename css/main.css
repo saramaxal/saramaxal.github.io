@@ -372,6 +372,11 @@ template {
   src: url("../fonts/Ubuntu-Bold.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+.item_button, .card__resurce, .card__title, .skills__skill, .skills__title {
+  border-radius: 10px;
+  padding: 8px;
+}
+
 html {
   box-sizing: border-box;
   position: relative;
@@ -418,10 +423,19 @@ p {
   margin: 0;
 }
 
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
 .container {
   max-width: 320px;
   margin: 0 auto;
-  padding: 40px 15px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -445,6 +459,8 @@ p {
 .header__container {
   gap: 24px;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header__title {
@@ -507,7 +523,6 @@ p {
   color: #812B44;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-size: 18px;
   text-align: center;
 }
 
@@ -526,6 +541,8 @@ p {
 
 .skills__container {
   gap: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .skills__block {
@@ -540,11 +557,8 @@ p {
 .skills__title {
   background-color: #453A34;
   color: #F1DCA5;
-  border-radius: 10px;
-  padding: 8px;
   width: -moz-max-content;
   width: max-content;
-  font-size: 18px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   letter-spacing: 1.8px;
@@ -558,8 +572,6 @@ p {
 
 .skills__skill {
   background-color: #F1DCA5;
-  border-radius: 10px;
-  padding: 8px;
 }
 
 .skills__hard-items {
@@ -567,6 +579,68 @@ p {
 }
 
 .skills__arrows-top {
+  background-color: #453A34;
+  color: #F1DCA5;
+}
+
+.experience {
+  background-color: #F1DCA5;
+}
+
+.experience__container {
+  gap: 40px;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.accent {
+  color: #812B44;
+}
+
+.experience__card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #F1DCA5;
+  align-items: center;
+}
+
+.card__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  background-color: #A77252;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.card__resurces {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.card__show {
+  display: flex;
+  gap: 16px;
+}
+
+.card__resurce {
+  background-color: #61764E;
+}
+
+.item_button {
+  background-color: #A77252;
+}
+
+.experience__other-items {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  list-style: disc;
+}
+
+.experience__arrows-top {
   background-color: #453A34;
   color: #F1DCA5;
 }/*# sourceMappingURL=main.css.map */
