@@ -5,7 +5,19 @@
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/ubuntu-v20-latin-regular.woff2') format('woff2');
+  src: url('../fonts/Ubuntu-Regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* ubuntu-medium - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Ubuntu-Medium.woff2') format('woff2');
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -16,16 +28,21 @@
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/ubuntu-v20-latin-700.woff2') format('woff2');
+  src: url('../fonts/Ubuntu-Bold.woff2') format('woff2');
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @mixin ubuntu-regular {
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
 }
 
+@mixin ubuntu-medium {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
 @mixin ubuntu-bold {
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
 }
