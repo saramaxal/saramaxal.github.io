@@ -372,7 +372,17 @@ template {
   src: url("../fonts/Ubuntu-Bold.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-.item_button, .card__resurce, .card__title, .skills__skill, .skills__title {
+/* ubuntu-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Ubuntu";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Ubuntu-BoldItalic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.card__resurce, .card__title, .skills__skill, .skills__title {
   border-radius: 10px;
   padding: 8px;
 }
@@ -438,6 +448,7 @@ h3 {
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .icon {
@@ -445,11 +456,40 @@ h3 {
   height: 24px;
 }
 
-.arrows-top {
+.arrows {
   border-radius: 10px;
   width: 40px;
   height: 40px;
-  margin: 0 auto;
+}
+
+.arrows:hover {
+  background-color: transparent;
+  outline: solid;
+}
+
+.arrows:focus-visible {
+  outline: solid;
+  color: #EE873C;
+  background-color: transparent;
+}
+
+.link__nav {
+  display: contents;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection, li::-moz-selection, p::-moz-selection, span::-moz-selection, a::-moz-selection, img::-moz-selection {
+  background-color: #EE873C;
+  color: #453A34;
+}
+
+h1::selection, h2::selection, h3::selection, div::selection, li::selection, p::selection, span::selection, a::selection, img::selection {
+  background-color: #EE873C;
+  color: #453A34;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection, li::-moz-selection, p::-moz-selection, span::-moz-selection, a::-moz-selection, img::-moz-selection {
+  background-color: #EE873C;
+  color: #453A34;
 }
 
 .header {
@@ -458,7 +498,6 @@ h3 {
 
 .header__container {
   gap: 24px;
-  align-items: center;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -466,15 +505,17 @@ h3 {
 .header__title {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   color: #812B44;
   letter-spacing: 3.84px;
+  text-align: center;
 }
 
 .header__nav {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  color: #812B44;
+  font-style: normal;
   font-size: 18px;
 }
 .header__nav .nav__items {
@@ -486,11 +527,23 @@ h3 {
 .header__nav .nav__items .item {
   line-height: 30px;
 }
+.header__nav .nav__items .item a {
+  color: #812B44;
+}
+.header__nav .nav__items .item a:hover {
+  color: #EE873C;
+  outline: solid;
+}
+.header__nav .nav__items .item a:focus-visible {
+  color: #EE873C;
+  outline: solid;
+}
 
 .header__hero-name {
   font-size: 24px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
+  font-style: normal;
   width: 160px;
   letter-spacing: 3.84px;
   text-align: center;
@@ -523,6 +576,7 @@ h3 {
   color: #812B44;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
+  font-style: normal;
   text-align: center;
 }
 
@@ -533,6 +587,10 @@ h3 {
 
 .header__arrows-down {
   color: #812B44;
+}
+
+.header__arrows-down:hover {
+  color: #EE873C;
 }
 
 .skills {
@@ -561,6 +619,7 @@ h3 {
   width: max-content;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
+  font-style: normal;
   letter-spacing: 1.8px;
 }
 
@@ -583,13 +642,16 @@ h3 {
   color: #F1DCA5;
 }
 
+.skills__arrows-top:hover {
+  color: #F1DCA5;
+}
+
 .experience {
   background-color: #F1DCA5;
 }
 
 .experience__container {
   gap: 40px;
-  align-items: center;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -630,7 +692,41 @@ h3 {
 }
 
 .item_button {
+  border-radius: 10px;
+  background-color: transparent;
+  border: 3px solid #453A34;
+}
+
+.item_button a {
+  color: #453A34;
+  display: inline-block;
+  padding: 8px;
+}
+
+.item_button:hover {
   background-color: #A77252;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.item_button:hover a {
+  color: #F1DCA5;
+}
+
+.item_button:focus {
+  outline: none;
+}
+
+.item_button:focus-visible {
+  border-color: #EE873C;
+}
+
+.item_button:focus-visible a {
+  color: #EE873C;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .experience__other-items {
@@ -645,6 +741,10 @@ h3 {
   color: #F1DCA5;
 }
 
+.experience__arrows-top:hover {
+  color: #453A34;
+}
+
 .contacts {
   background-color: #453A34;
 }
@@ -653,7 +753,6 @@ h3 {
   padding-left: 13px;
   padding-right: 13px;
   gap: 40px;
-  align-items: center;
   color: #F1DCA5;
 }
 
@@ -667,14 +766,21 @@ h3 {
   gap: 24px;
 }
 
-.contacts__item {
+.contacts__text {
+  color: #F1DCA5;
   display: flex;
   align-items: center;
   gap: 24px;
 }
 
-.contacts__text {
-  color: #F1DCA5;
+.contacts__text:hover {
+  color: #EE873C;
+  outline: solid;
+}
+
+.contacts__text:focus-visible {
+  color: #EE873C;
+  outline: solid;
 }
 
 .contacts__upd {
@@ -686,4 +792,8 @@ h3 {
 .contacts__arrows-top {
   background-color: #EE873C;
   color: #453A34;
+}
+
+.contacts__arrows-top:hover {
+  color: #EE873C;
 }/*# sourceMappingURL=main.css.map */

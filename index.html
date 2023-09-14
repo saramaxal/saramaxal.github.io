@@ -5,29 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESUME</title>
+    <link rel="preload" href="fonts/Ubuntu-Regular.woff2" crossorigin as="font" type="font/woff2">
+    <link rel="preload" href="fonts/Ubuntu-Bold.woff2" crossorigin as="font" type="font/woff2">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="about">
         <div class="container header__container">
             <h1 class="header__title">
-                FRONTEND <br> DEVELOPER
+                FRONTEND DEVELOPER
             </h1>
             <nav class="header__nav nav">
                 <ul class="nav__items">
                     <li class="item">
-                        Обо мне
+                        <a href="#about">Обо мне</a>
                     </li>
                     <li class="item">
-                        Навыки
+                        <a href="#skills">Навыки</a>
                     </li>
                     <li class="item">
-                        Опыт
+                        <a href="#experience">Опыт</a>
                     </li>
                     <li class="item">
-                        Контакты
+                        <a href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -58,11 +60,13 @@
                     Системное программирование и администрирование, бакалавр
                 </div>
             </div>
-            <iconify-icon class="header__arrows-down" icon="mingcute:arrows-down-fill" width="40px"
-                height="40px"></iconify-icon>
+            <a href="#contacts" class="link__nav link__bottom">
+                <iconify-icon tabindex="0" class="header__arrows-down arrows" icon="mingcute:arrows-down-fill"
+                    width="40px" height="40px"></iconify-icon>
+            </a>
         </div>
     </header>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container skills__container">
             <article class="skills__block">
                 <h2 class="skills__title">
@@ -94,12 +98,14 @@
                     <span class="skills__skill">Git</span>
                 </div>
             </article>
-            <iconify-icon class="skills__arrows-top arrows-top" icon="mingcute:arrows-down-fill" width="40" height="40"
-                rotate="180deg"></iconify-icon>
+            <a class="link__nav link-top" href="#about">
+                <iconify-icon tabindex="0" class="skills__arrows-top arrows" icon="mingcute:arrows-down-fill" width="40"
+                    height="40" rotate="180deg"></iconify-icon>
+            </a>
         </div>
 
     </section>
-    <section class="experience">
+    <section class="experience" id="experience">
         <div class="container experience__container">
             <h2 class="experience__title">Опыт / <span class="accent">Проекты</span></h2>
             <article class="experience__card card">
@@ -119,8 +125,10 @@
                     <li class="card__resurce">adaptive</li>
                 </ul>
                 <ul class="card__show">
-                    <li class="item_button"><a class="card__show-button">show >></a></li>
-                    <li class="item_button"><a class="card__github-button">github >></a></li>
+                    <li tabindex="0" class="item_button"><a href="https://saramaxal.github.io/workspace"
+                            class="card__show-button" target="_blank" tabindex="-1">show >></a></li>
+                    <li tabindex="0" class="item_button"><a href="https://github.com/saramaxal/workspace"
+                            class="card__github-button" target="_blank" tabindex="-1">github >></a></li>
                 </ul>
             </article>
 
@@ -138,8 +146,12 @@
                     <li class="card__resurce">angular</li>
                 </ul>
                 <ul class="card__show">
-                    <li class="item_button"><a class="card__show-button">show >></a></li>
-                    <li class="item_button"><a class="card__github-button">github >></a></li>
+                    <li tabindex="0" class="item_button"><a
+                            href="https://saramaxal.github.io/landing_page-cheddar_burger-angular/" target="_blank"
+                            tabindex="-1" class="card__show-button">show >></a></li>
+                    <li tabindex="0" class="item_button"><a
+                            href="https://github.com/saramaxal/landing_page-cheddar_burger-angular" target="_blank"
+                            tabindex="-1" class="card__github-button">github >></a></li>
                 </ul>
             </article>
 
@@ -159,7 +171,8 @@
                     <li class="card__resurce">figma</li>
                 </ul>
                 <ul class="card__show">
-                    <li class="item_button"><a class="card__show-button">show >></a></li>
+                    <li tabindex="0" class="item_button"><a href="https://zvyagtest.ru/" target="_blank"
+                            class="card__show-button" tabindex="-1">show >></a></li>
                 </ul>
             </article>
 
@@ -183,43 +196,54 @@
                     Layout (поэтому мне будет не сложно работать с макетами для их верстки).
                 </li>
             </ul>
-
-            <iconify-icon class="experience__arrows-top arrows-top" icon="mingcute:arrows-down-fill" width="40"
-                height="40" rotate="180deg"></iconify-icon>
-
+            <a class="link__nav link-top" href="#about">
+                <iconify-icon tabindex="0" class="experience__arrows-top arrows" icon="mingcute:arrows-down-fill"
+                    width="40" height="40" rotate="180deg"></iconify-icon>
+            </a>
         </div>
     </section>
-    <footer class="contacts">
+    <footer class="contacts" id="contacts">
         <div class="contacts__container container">
             <h2 class="contacts__title">
                 Контакты
             </h2>
             <ul class="contacts__items">
                 <li class="contacts__item">
-                    <iconify-icon class="contacts__icon icon" icon="ic:baseline-email" width="24"
-                        height="24"></iconify-icon>
-                    <a class="contacts__text" href="#">saramaxal@gmail.com</a>
+                    <a class="contacts__text" href="mailto:saramaxal@gmail.com">
+                        <iconify-icon class="contacts__icon icon" icon="ic:baseline-email" width="24"
+                            height="24"></iconify-icon>
+                        <span>saramaxal@gmail.com</span>
+                    </a>
                 </li>
                 <li class="contacts__item">
-                    <iconify-icon class="contacts__icon icon" icon="ic:baseline-telegram" width="24"
-                        height="24"></iconify-icon>
-                    <a class="contacts__text" href="#">https://t.me/SaraAlekseeva</a>
+                    <a class="contacts__text" href="tg://resolve?domain=SaraAlekseeva">
+                        <iconify-icon class="contacts__icon icon" icon="ic:baseline-telegram" width="24"
+                            height="24"></iconify-icon>
+                        <span>https://t.me/SaraAlekseeva</span>
+                    </a>
                 </li>
                 <li class="contacts__item">
-                    <iconify-icon class="contacts__icon icon" icon="mdi:github" width="24" height="24"></iconify-icon>
-                    <a class="contacts__text" href="#">https://github.com/saramaxal</a>
+                    <a class="contacts__text" href="https://github.com/saramaxal" target="_blank">
+                        <iconify-icon class="contacts__icon icon" icon="mdi:github" width="24"
+                            height="24"></iconify-icon>
+                        <span>https://github.com/saramaxal</span>
+                    </a>
                 </li>
                 <li class="contacts__item">
-                    <iconify-icon class="contacts__icon icon" icon="uil:vk" width="24" height="24"></iconify-icon>
-                    <a class="contacts__text" href="#">https://vk.com/id236493488</a>
+                    <a class="contacts__text" href="https://vk.com/saramaxal" target="_blank">
+                        <iconify-icon class="contacts__icon icon" icon="uil:vk" width="24" height="24"></iconify-icon>
+                        <span>https://vk.com/saramaxal</span>
+                    </a>
                 </li>
             </ul>
             <p class="contacts__upd">
                 Благодарю за посещение моей странички :&#41; Будет очень круто, если вы свяжетесь со мной через
                 telegram.
             </p>
-            <iconify-icon class="contacts__arrows-top arrows-top" icon="mingcute:arrows-down-fill" width="40"
-                height="40" rotate="180deg"></iconify-icon>
+            <a class="link__nav link-top" href="#about">
+                <iconify-icon tabindex="0" class="contacts__arrows-top arrows" icon="mingcute:arrows-down-fill"
+                    width="40" height="40" rotate="180deg"></iconify-icon>
+            </a>
         </div>
     </footer>
 </body>

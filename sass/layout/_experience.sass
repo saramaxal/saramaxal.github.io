@@ -3,7 +3,6 @@
 
 .experience__container
     gap: 40px
-    align-items: center
     padding-left: 40px
     padding-right: 40px
 
@@ -37,8 +36,32 @@
     background-color: $GREEN
 
 .item_button
-    @extend %round
+    // @extend %round
+    border-radius: 10px
+    background-color: transparent
+    border: 3px solid $BROWN_BLACK
+
+.item_button a
+    color: $BROWN_BLACK
+    display: inline-block
+    padding: 8px
+
+.item_button:hover
     background-color: $BROWN
+    @include ubuntu-bold_italic
+
+.item_button:hover a
+    color: $YELLOW
+
+.item_button:focus
+    outline: none
+
+.item_button:focus-visible
+    border-color: $ORANGE
+
+.item_button:focus-visible a
+    color: $ORANGE
+    @include ubuntu-bold_italic
 
 .experience__other-items
     display: flex
@@ -49,3 +72,6 @@
 .experience__arrows-top
     background-color: $BROWN_BLACK
     color: $YELLOW
+
+.experience__arrows-top:hover
+    color: $BROWN_BLACK

@@ -3,7 +3,6 @@
 
 .header__container
     gap: 24px
-    align-items: center
     padding-left: 15px
     padding-right: 15px
 
@@ -12,10 +11,10 @@
     font-size: 24px
     color: $RED
     letter-spacing: 3.84px
+    text-align: center
 
 .header__nav
     @include ubuntu-bold
-    color: $RED
     font-size: 18px
 
     .nav__items
@@ -26,6 +25,17 @@
 
         .item
             line-height: 30px
+
+            a
+                color: $RED
+
+            a:hover
+                color: $ORANGE
+                outline: solid
+
+            a:focus-visible
+                color: $ORANGE
+                outline: solid
 
 .header__hero-name
     font-size: 24px
@@ -64,3 +74,6 @@
 
 .header__arrows-down
     color: $RED
+
+.header__arrows-down:hover
+    color: $ORANGE
