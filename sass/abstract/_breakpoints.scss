@@ -1,0 +1,55 @@
+$xsBreakpoint: 320px;
+$smBreakpoint: 600px;
+$mdBreakpoint: 1024px;
+$lgBreakpoint: 1290px;
+$xlBreakpoint: 1440px;
+
+//padding left and right
+@mixin resize-container($width, $padding) {
+    .container {
+        max-width: $width + $padding*2;
+        padding: 0px $padding;
+    }
+}
+
+@mixin xs-breakpoint {
+    @media only screen and (max-width: $xsBreakpoint) {
+        @include resize-container(290px, 15px);
+        @content;
+    }
+}
+
+;
+
+@mixin sm-breakpoint {
+    @media only screen and (min-width: $smBreakpoint) {
+        @include resize-container(708px, 30px);
+        @content;
+    }
+}
+
+;
+
+@mixin md-breakpoint {
+    @media only screen and (min-width: $mdBreakpoint) {
+        @content
+    }
+}
+
+;
+
+@mixin lg-breakpoint {
+    @media only screen and (min-width: $lgBreakpoint) {
+        @content
+    }
+}
+
+;
+
+@mixin xl-breakpoint {
+    @media only screen and (min-width: $xlBreakpoint) {
+        @content
+    }
+}
+
+;

@@ -42,10 +42,7 @@ h3
     font-size: 14px
 
 .container
-    max-width: 320px
     margin: 0 auto
-    padding-top: 40px
-    padding-bottom: 40px
     display: flex
     flex-direction: column
     align-items: center
@@ -71,6 +68,9 @@ h3
 .link__nav
     display: contents
 
+.header__link
+    display: none
+
 h1::selection, h2::selection, h3::selection, div::selection, li::selection, p::selection, span::selection, a::selection, img::selection
     background-color: $ORANGE
     color: $BROWN_BLACK
@@ -78,3 +78,5 @@ h1::selection, h2::selection, h3::selection, div::selection, li::selection, p::s
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection, li::-moz-selection, p::-moz-selection, span::-moz-selection, a::-moz-selection, img::-moz-selection
     background-color: $ORANGE
     color: $BROWN_BLACK
+
+@include xs-breakpoint

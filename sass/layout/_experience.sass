@@ -3,11 +3,18 @@
 
 .experience__container
     gap: 40px
-    padding-left: 40px
-    padding-right: 40px
+    padding-top: 40px
+    padding-bottom: 40px
+    max-width: 240px
 
 .accent
     color: $RED
+
+.experience__wrap-cards
+    display: flex
+    flex-direction: column
+    gap: 40px
+    width: 100%
 
 .experience__card
     display: flex
@@ -15,12 +22,17 @@
     gap: 16px
     color: $YELLOW
     align-items: center
+    padding: 4px
+    border: 2px solid $BROWN
 
 .card__title
     @extend %round
     @include ubuntu-regular
     background-color: $BROWN
     width: max-content
+
+.card__description
+    color: $BROWN_BLACK
 
 .card__resurces
     display: flex
@@ -36,13 +48,12 @@
     background-color: $GREEN
 
 .item_button
-    // @extend %round
     border-radius: 10px
     background-color: transparent
-    border: 3px solid $BROWN_BLACK
+    border: 3px solid $BROWN
 
 .item_button a
-    color: $BROWN_BLACK
+    color: $BROWN
     display: inline-block
     padding: 8px
 

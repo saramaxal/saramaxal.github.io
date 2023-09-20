@@ -1,0 +1,144 @@
+@include sm-breakpoint
+    //base 
+    h2
+        font-size: 24px
+
+    h3
+        font-size: 18px
+
+    body
+        font-size: 18px
+
+    //header
+    .header__container
+        padding-top: 40px
+        padding-bottom: 108px
+        display: grid
+        grid-template-columns: 232px 1fr
+        gap: 0
+        column-gap: 14px
+
+    .header__nav
+        order: -1
+        padding-top: 22px
+        padding-bottom: 62px
+        max-width: none
+        font-size: 24px
+        grid-column: span 2
+        margin: auto
+
+        .nav__items
+            gap: 44px
+
+    .header__wrap-links
+        grid-row: 5/6
+        padding-top: 34px
+        justify-self: center
+        align-self: flex-start
+
+    .header__links
+        display: flex
+        flex-wrap: wrap
+        max-width: 188px
+        gap: 24px
+        justify-content: center
+
+    .header__link
+        display: inline-block
+
+    .header__image-photo
+        grid-column: 1/2
+        grid-row: 2/5
+        justify-self: center
+        align-self: flex-start
+
+    .header__icon
+        color: $BROWN_BLACK
+        width: 34px
+        height: 34px
+
+    .header__title
+        font-size: 30px
+        letter-spacing: 2.4px
+        padding-bottom: 34px
+
+    .header__hero-name
+        font-size: 30px
+        letter-spacing: 2.4px
+        max-width: none
+        grid-column: 2/3
+        text-align: start
+        padding-bottom: 8px
+
+    .header__hero-city
+        grid-column: 2/3
+        font-size: 24px
+        height: 44px
+
+    .hero-city__icon
+        width: 30px
+        height: 30px
+
+    .header__wrap-info
+        grid-column: 2/3
+        flex-direction: row
+        padding-top: 34px
+        flex-wrap: wrap
+
+    .header__info
+        max-width: 214px
+
+    .info__title
+        text-align: start
+
+    .info__text
+        text-align: start
+
+    //skills
+    .skills__container
+        padding-top: 40px
+        padding-bottom: 40px
+
+    .skills__block
+        max-width: 580px
+
+    //experience
+    .experience__container
+        padding-top: 40px
+        padding-bottom: 40px
+
+    .experience__title
+        // font-size: 24px
+
+    .experience__wrap-cards
+        flex-wrap: wrap
+        gap: 8px
+        flex-direction: row
+        justify-content: left
+
+    .experience__card
+        max-width: 340px
+        min-height: 435px
+
+    .card__resurces
+        height: 82px
+        align-items: flex-start
+
+    .experience__other-items
+        max-width: 688px
+
+    .experience__other-item
+        margin-left: 19px
+
+    //contacts
+    .contacts__container
+        padding-top: 40px
+        padding-bottom: 40px
+
+    .contacts__upd
+        max-width: 340px
+
+//temporary expedient 
+@media (max-width: 747px)
+    .experience__wrap-cards
+        justify-content: center

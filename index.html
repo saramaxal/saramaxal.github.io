@@ -37,33 +37,68 @@
                 Татьяна Алексеева
             </span>
             <div class="header__hero-city">
-                <iconify-icon class="hero-city__icon icon" icon="mingcute:location-fill" width="24"
-                    height="24"></iconify-icon>
+                <svg class="hero-city__icon icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    viewBox="0 0 30 30" fill="none">
+                    <path
+                        d="M17.8509 29.0543C21.5899 25.7636 28.2421 19.0406 28.2421 12.8711C28.2421 9.45744 26.8861 6.18363 24.4723 3.76984C22.0585 1.35605 18.7847 0 15.3711 0C11.9574 0 8.68363 1.35605 6.26984 3.76984C3.85605 6.18363 2.5 9.45744 2.5 12.8711C2.5 19.0406 9.15004 25.7636 12.8912 29.0543C13.5736 29.6634 14.4563 30 15.3711 30C16.2858 30 17.1685 29.6634 17.8509 29.0543ZM11.0807 12.8711C11.0807 11.7332 11.5327 10.6419 12.3373 9.83732C13.1419 9.03272 14.2332 8.5807 15.3711 8.5807C16.5089 8.5807 17.6002 9.03272 18.4048 9.83732C19.2094 10.6419 19.6614 11.7332 19.6614 12.8711C19.6614 14.0089 19.2094 15.1002 18.4048 15.9048C17.6002 16.7094 16.5089 17.1614 15.3711 17.1614C14.2332 17.1614 13.1419 16.7094 12.3373 15.9048C11.5327 15.1002 11.0807 14.0089 11.0807 12.8711Z"
+                        fill="#453A34" />
+                </svg>
                 <span class="hero-city__text">Санкт-Петербург</span>
             </div>
             <div class="header__image-photo">
 
             </div>
-            <div class="header__info">
-                <h2 class="info__title">
-                    Обо мне
-                </h2>
-                <div class="info__text">
-                    Люблю дизайн, люблю программирование. Хочу делать хорошую верстку для вашего сайта :&#41;
+            <div class="header__wrap-info">
+                <div class="header__info">
+                    <h2 class="info__title">
+                        Обо мне
+                    </h2>
+                    <div class="info__text">
+                        Люблю дизайн, люблю программирование. Хочу делать хорошую верстку для вашего сайта :&#41;
+                    </div>
+                </div>
+                <div class="header__info">
+                    <h2 class="info__title">
+                        Образование
+                    </h2>
+                    <div class="info__text">
+                        Системное программирование и администрирование, бакалавр
+                    </div>
                 </div>
             </div>
-            <div class="header__info">
-                <h2 class="info__title">
-                    Образование
-                </h2>
-                <div class="info__text">
-                    Системное программирование и администрирование, бакалавр
-                </div>
+            <div class="header__wrap-links">
+                <ul class="header__links">
+                    <li class="header__link">
+                        <a href="mailto:saramaxal@gmail.com">
+                            <iconify-icon class="header__icon icon" icon="ic:baseline-email" width="34"
+                                height="34"></iconify-icon>
+                        </a>
+                    </li>
+                    <li class="header__link">
+                        <a href="tg://resolve?domain=SaraAlekseeva">
+                            <iconify-icon class="header__icon icon" icon="ic:baseline-telegram" width="34"
+                                height="34"></iconify-icon>
+                        </a>
+                    </li>
+                    <li class="header__link">
+                        <a href="https://github.com/saramaxal" target="_blank">
+                            <iconify-icon class="header__icon icon" icon="mdi:github" width="34"
+                                height="34"></iconify-icon>
+                        </a>
+                    </li>
+                    <li class="header__link">
+                        <a href="https://vk.com/saramaxal" target="_blank">
+                            <iconify-icon class="header__icon icon" icon="uil:vk" width="34" height="34"></iconify-icon>
+                        </a>
+                    </li>
+                    <li class="header__wrap-arrow">
+                        <a href="#contacts" class="link__nav link__bottom">
+                            <iconify-icon tabindex="0" class="header__arrows-down arrows"
+                                icon="mingcute:arrows-down-fill" width="40px" height="40px"></iconify-icon>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <a href="#contacts" class="link__nav link__bottom">
-                <iconify-icon tabindex="0" class="header__arrows-down arrows" icon="mingcute:arrows-down-fill"
-                    width="40px" height="40px"></iconify-icon>
-            </a>
         </div>
     </header>
     <section class="skills" id="skills">
@@ -108,73 +143,90 @@
     <section class="experience" id="experience">
         <div class="container experience__container">
             <h2 class="experience__title">Опыт / <span class="accent">Проекты</span></h2>
-            <article class="experience__card card">
-                <h3 class="card__title">
-                    WebSite WorkSpace
-                </h3>
-                <div class="card__preview">
-                    <img src="./image/wokspace.png" alt="Preview image WorkSpace" class="card__preview-image">
-                </div>
-                <ul class="card__resurces">
-                    <li class="card__resurce">html</li>
-                    <li class="card__resurce">css</li>
-                    <li class="card__resurce">js</li>
-                    <li class="card__resurce">choices-js</li>
-                    <li class="card__resurce">api</li>
-                    <li class="card__resurce">БЭМ</li>
-                    <li class="card__resurce">adaptive</li>
-                </ul>
-                <ul class="card__show">
-                    <li tabindex="0" class="item_button"><a href="https://saramaxal.github.io/workspace"
-                            class="card__show-button" target="_blank" tabindex="-1">show >></a></li>
-                    <li tabindex="0" class="item_button"><a href="https://github.com/saramaxal/workspace"
-                            class="card__github-button" target="_blank" tabindex="-1">github >></a></li>
-                </ul>
-            </article>
 
-            <article class="experience__card card">
-                <h3 class="card__title">
-                    Burger Cheddar
-                </h3>
-                <div class="card__preview">
-                    <img src="./image/burger-cheddar.png" alt="Preview image BurgerCheddar" class="card__preview-image">
-                </div>
-                <ul class="card__resurces">
-                    <li class="card__resurce">html</li>
-                    <li class="card__resurce">css</li>
-                    <li class="card__resurce">js</li>
-                    <li class="card__resurce">angular</li>
-                </ul>
-                <ul class="card__show">
-                    <li tabindex="0" class="item_button"><a
-                            href="https://saramaxal.github.io/landing_page-cheddar_burger-angular/" target="_blank"
-                            tabindex="-1" class="card__show-button">show >></a></li>
-                    <li tabindex="0" class="item_button"><a
-                            href="https://github.com/saramaxal/landing_page-cheddar_burger-angular" target="_blank"
-                            tabindex="-1" class="card__github-button">github >></a></li>
-                </ul>
-            </article>
+            <div class="experience__wrap-cards">
+                <article class="experience__card card">
+                    <h3 class="card__title">
+                        WebSite WorkSpace
+                    </h3>
+                    <div class="card__preview">
+                        <img src="./image/wokspace.png" alt="Preview image WorkSpace" class="card__preview-image">
+                    </div>
+                    <div class="card__description">
+                        Сайт WorkSpace с вакансиями и возможностью их фильтра. Подробная информация о вакансии по клику
+                        на
+                        карточку (всплывает окно). Есть адаптив.
+                    </div>
+                    <ul class="card__resurces">
+                        <li class="card__resurce">html</li>
+                        <li class="card__resurce">css</li>
+                        <li class="card__resurce">js</li>
+                        <li class="card__resurce">choices-js</li>
+                        <li class="card__resurce">api</li>
+                        <li class="card__resurce">БЭМ</li>
+                        <li class="card__resurce">adaptive</li>
+                    </ul>
+                    <ul class="card__show">
+                        <li tabindex="0" class="item_button"><a href="https://saramaxal.github.io/workspace"
+                                class="card__show-button" target="_blank" tabindex="-1">show >></a></li>
+                        <li tabindex="0" class="item_button"><a href="https://github.com/saramaxal/workspace"
+                                class="card__github-button" target="_blank" tabindex="-1">github >></a></li>
+                    </ul>
+                </article>
 
-            <article class="experience__card card">
-                <h3 class="card__title">
-                    PyPlanet
-                </h3>
-                <div class="card__preview">
-                    <img src="./image/pipe.png" alt="Preview image PyPlanet" class="card__preview-image">
-                </div>
-                <ul class="card__resurces">
-                    <li class="card__resurce">html</li>
-                    <li class="card__resurce">css</li>
-                    <li class="card__resurce">node.js</li>
-                    <li class="card__resurce">beget</li>
-                    <li class="card__resurce">zero-md</li>
-                    <li class="card__resurce">figma</li>
-                </ul>
-                <ul class="card__show">
-                    <li tabindex="0" class="item_button"><a href="https://zvyagtest.ru/" target="_blank"
-                            class="card__show-button" tabindex="-1">show >></a></li>
-                </ul>
-            </article>
+                <article class="experience__card card">
+                    <h3 class="card__title">
+                        Burger Cheddar
+                    </h3>
+                    <div class="card__preview">
+                        <img src="./image/burger-cheddar.png" alt="Preview image BurgerCheddar"
+                            class="card__preview-image">
+                    </div>
+                    <div class="card__description">
+                        Лэндинг BurgerCheddar по продаже бургеров. Показывает ассортимент бургеров и дает возможность
+                        заполнить форму заказа. Адаптива нет.
+                    </div>
+                    <ul class="card__resurces">
+                        <li class="card__resurce">html</li>
+                        <li class="card__resurce">css</li>
+                        <li class="card__resurce">js</li>
+                        <li class="card__resurce">angular</li>
+                    </ul>
+                    <ul class="card__show">
+                        <li tabindex="0" class="item_button"><a
+                                href="https://saramaxal.github.io/landing_page-cheddar_burger-angular/" target="_blank"
+                                tabindex="-1" class="card__show-button">show >></a></li>
+                        <li tabindex="0" class="item_button"><a
+                                href="https://github.com/saramaxal/landing_page-cheddar_burger-angular" target="_blank"
+                                tabindex="-1" class="card__github-button">github >></a></li>
+                    </ul>
+                </article>
+
+                <article class="experience__card card">
+                    <h3 class="card__title">
+                        PyPlanet
+                    </h3>
+                    <div class="card__preview">
+                        <img src="./image/pipe.png" alt="Preview image PyPlanet" class="card__preview-image">
+                    </div>
+                    <div class="card__description">
+                        Учебник Planet of Python. Разный материал о Python, написанный мной в пед целях. Планируется
+                        адаптив, разрабатывается новый дизайн и логика.
+                    </div>
+                    <ul class="card__resurces">
+                        <li class="card__resurce">html</li>
+                        <li class="card__resurce">css</li>
+                        <li class="card__resurce">node.js</li>
+                        <li class="card__resurce">beget</li>
+                        <li class="card__resurce">zero-md</li>
+                        <li class="card__resurce">figma</li>
+                    </ul>
+                    <ul class="card__show">
+                        <li tabindex="0" class="item_button"><a href="https://zvyagtest.ru/" target="_blank"
+                                class="card__show-button" tabindex="-1">show >></a></li>
+                    </ul>
+                </article>
+            </div>
 
             <h2 class="experience__title">Опыт / <span class="accent">Другое</span></h2>
 

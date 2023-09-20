@@ -3,8 +3,8 @@
 
 .header__container
     gap: 24px
-    padding-left: 15px
-    padding-right: 15px
+    padding-top: 40px
+    padding-bottom: 40px
 
 .header__title
     @include ubuntu-bold
@@ -12,16 +12,17 @@
     color: $RED
     letter-spacing: 3.84px
     text-align: center
+    max-width: 174px
 
 .header__nav
     @include ubuntu-bold
     font-size: 18px
+    max-width: 175px
 
     .nav__items
         display: flex
         flex-wrap: wrap
         gap: 24px
-        max-width: 175px
 
         .item
             line-height: 30px
@@ -40,7 +41,7 @@
 .header__hero-name
     font-size: 24px
     @include ubuntu-bold
-    width: 160px
+    max-width: 160px
     letter-spacing: 3.84px
     text-align: center
 
@@ -58,6 +59,11 @@
     height: 204px
     width: 204px
 
+.header__wrap-info
+    display: flex
+    gap: 24px
+    flex-direction: column
+
 .header__info
     display: flex
     gap: 8px
@@ -69,11 +75,18 @@
     text-align: center
 
 .info__text
-    padding: 8px
     text-align: center
+    max-width: 280px
 
 .header__arrows-down
     color: $RED
 
 .header__arrows-down:hover
+    color: $ORANGE
+
+.header__link a
+    display: block
+
+.header__link a:focus
+    outline: solid
     color: $ORANGE
