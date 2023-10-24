@@ -382,8 +382,8 @@ template {
   src: url("../fonts/Ubuntu-BoldItalic.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-.card__resurce, .card__title, .skills__skill, .skills__title {
-  border-radius: 10px;
+.card__resurce, .card__title {
+  border-radius: 4px;
   padding: 8px;
 }
 
@@ -493,9 +493,12 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
   color: #453A34;
 }
 
-@media only screen and (max-width: 320px) {
+ul {
+  list-style-type: none;
+}
+
+@media only screen {
   .container {
-    max-width: 320px;
     padding: 0px 15px;
   }
 }
@@ -584,6 +587,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
   display: flex;
   gap: 8px;
   flex-direction: column;
+  max-width: 300px;
 }
 
 .info__title {
@@ -595,8 +599,13 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
 }
 
 .info__text {
-  text-align: center;
-  max-width: 280px;
+  max-width: 444px;
+  line-height: 18px;
+}
+.info__text_accent {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #812B44;
 }
 
 .header__arrows-down {
@@ -631,13 +640,14 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
   flex-wrap: wrap;
   flex-direction: column;
   gap: 16px;
-  max-width: 212px;
   margin: auto;
 }
 
 .skills__title {
   background-color: #453A34;
   color: #F1DCA5;
+  border-radius: 10px;
+  padding: 8px;
   width: -moz-max-content;
   width: max-content;
   font-family: "Ubuntu", sans-serif;
@@ -654,10 +664,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
 
 .skills__skill {
   background-color: #F1DCA5;
-}
-
-.skills__hard-items {
-  letter-spacing: 1.4px;
+  border-radius: 10px;
+  padding: 8px;
 }
 
 .skills__arrows-top {
@@ -677,7 +685,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
   gap: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
-  max-width: 240px;
 }
 
 .accent {
@@ -687,18 +694,20 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
 .experience__wrap-cards {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 8px;
   width: 100%;
+  align-items: center;
 }
 
 .experience__card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 16px;
   color: #F1DCA5;
-  align-items: center;
   padding: 4px;
   border: 2px solid #A77252;
+  max-width: 340px;
 }
 
 .card__title {
@@ -722,6 +731,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
 .card__show {
   display: flex;
   gap: 16px;
+  height: 100%;
 }
 
 .card__resurce {
@@ -729,9 +739,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
 }
 
 .item_button {
-  border-radius: 10px;
+  border-radius: 4px;
   background-color: transparent;
   border: 3px solid #A77252;
+  align-self: flex-end;
 }
 
 .item_button a {
@@ -770,7 +781,25 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
   display: flex;
   gap: 16px;
   flex-direction: column;
-  list-style: disc;
+  max-width: 340px;
+}
+
+.experience__other-item {
+  display: flex;
+  gap: 8px;
+}
+
+.experience__other-item_circle {
+  width: 6px;
+  height: 6px;
+  background-color: #812B44;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+.experience__other-item_text {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .experience__arrows-top {
@@ -920,18 +949,18 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
   }
   .header__wrap-info {
     grid-column: 2/3;
-    flex-direction: row;
     padding-top: 34px;
     flex-wrap: wrap;
   }
   .header__info {
-    max-width: 214px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   .info__title {
     text-align: start;
   }
   .info__text {
-    text-align: start;
+    line-height: 24px;
   }
   .skills__container {
     padding-top: 40px;
@@ -946,13 +975,13 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
   }
   .experience__wrap-cards {
     flex-wrap: wrap;
-    gap: 8px;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
+    align-items: flex-start;
   }
   .experience__card {
     max-width: 340px;
-    min-height: 435px;
+    height: 520px;
   }
   .card__resurces {
     height: 82px;
@@ -964,16 +993,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, div::-moz-selection,
   .experience__other-item {
     margin-left: 19px;
   }
+  .experience__other-item_circle {
+    width: 8px;
+    height: 8px;
+    margin-top: 8px;
+  }
   .contacts__container {
     padding-top: 40px;
     padding-bottom: 40px;
   }
   .contacts__upd {
     max-width: 340px;
-  }
-}
-@media (max-width: 747px) {
-  .experience__wrap-cards {
-    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -5,7 +5,7 @@
     gap: 40px
     padding-top: 40px
     padding-bottom: 40px
-    max-width: 240px
+    // max-width: 240px
 
 .accent
     color: $RED
@@ -13,17 +13,19 @@
 .experience__wrap-cards
     display: flex
     flex-direction: column
-    gap: 40px
+    gap: 8px
     width: 100%
+    align-items: center
 
 .experience__card
     display: flex
     flex-direction: column
+    align-items: flex-start
     gap: 16px
     color: $YELLOW
-    align-items: center
     padding: 4px
     border: 2px solid $BROWN
+    max-width: 340px
 
 .card__title
     @extend %round
@@ -42,15 +44,17 @@
 .card__show
     display: flex
     gap: 16px
+    height: 100%
 
 .card__resurce
     @extend %round
     background-color: $GREEN
 
 .item_button
-    border-radius: 10px
+    border-radius: 4px
     background-color: transparent
     border: 3px solid $BROWN
+    align-self: flex-end
 
 .item_button a
     color: $BROWN
@@ -78,7 +82,22 @@
     display: flex
     gap: 16px
     flex-direction: column
-    list-style: disc
+    max-width: 340px
+
+.experience__other-item
+    display: flex
+    gap: 8px
+    // align-items: center
+
+.experience__other-item_circle
+    width: 6px
+    height: 6px
+    background-color: $RED
+    border-radius: 2px
+    margin-top: 5px
+
+.experience__other-item_text
+    width: fit-content
 
 .experience__arrows-top
     background-color: $BROWN_BLACK

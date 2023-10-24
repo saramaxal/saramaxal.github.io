@@ -68,6 +68,7 @@
     display: flex
     gap: 8px
     flex-direction: column
+    max-width: 300px
 
 .info__title
     color: $RED
@@ -75,8 +76,11 @@
     text-align: center
 
 .info__text
-    text-align: center
-    max-width: 280px
+    max-width: 444px
+    line-height: 18px
+    &_accent
+        @include ubuntu-medium
+        color: $RED
 
 .header__arrows-down
     color: $RED

@@ -81,18 +81,19 @@
 
     .header__wrap-info
         grid-column: 2/3
-        flex-direction: row
+        // flex-direction: row
         padding-top: 34px
         flex-wrap: wrap
 
     .header__info
-        max-width: 214px
+        max-width: fit-content
 
     .info__title
         text-align: start
 
     .info__text
-        text-align: start
+        // text-align: start
+        line-height: 24px
 
     //skills
     .skills__container
@@ -112,13 +113,13 @@
 
     .experience__wrap-cards
         flex-wrap: wrap
-        gap: 8px
         flex-direction: row
-        justify-content: left
+        justify-content: center
+        align-items: flex-start
 
     .experience__card
         max-width: 340px
-        min-height: 435px
+        height: 520px
 
     .card__resurces
         height: 82px
@@ -130,6 +131,11 @@
     .experience__other-item
         margin-left: 19px
 
+    .experience__other-item_circle
+        width: 8px
+        height: 8px
+        margin-top: 8px
+
     //contacts
     .contacts__container
         padding-top: 40px
@@ -139,6 +145,13 @@
         max-width: 340px
 
 //temporary expedient 
-@media (max-width: 747px)
-    .experience__wrap-cards
-        justify-content: center
+// @media (max-width: 747px)
+//     .experience__wrap-cards
+//         justify-content: center
+
+//     .info__text
+//         line-height: 24px
+
+// @media (max-width: 2048px)
+//     .info__text
+//         line-height: 24px

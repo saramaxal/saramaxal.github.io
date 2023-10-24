@@ -51,10 +51,10 @@
             <div class="header__wrap-info">
                 <div class="header__info">
                     <h2 class="info__title">
-                        Обо мне
+                        Деятельность
                     </h2>
                     <div class="info__text">
-                        Люблю дизайн, люблю программирование. Хочу участвовать в интересных проектах :&#41;
+                        Верстаю сайты по макетам Figma, анимирую, создаю дизайн, веду занятия
                     </div>
                 </div>
                 <div class="header__info">
@@ -62,7 +62,14 @@
                         Образование
                     </h2>
                     <div class="info__text">
-                        Системное программирование и администрирование, бакалавр
+                        <p><span class="info__text_accent">It:</span>
+                            Системное программирование и администрирование (бакалавр)
+                        </p>
+                    </div>
+                    <div class="info__text">
+                        <p><span class="info__text_accent">Педагогика:</span>
+                            Педагогика начального, основного, среднего общего образования (проф переподготовка)
+                        </p>
                     </div>
                 </div>
             </div>
@@ -112,7 +119,7 @@
                     <span class="skills__skill">Креативность</span>
                     <span class="skills__skill">Организованность</span>
                     <span class="skills__skill">Стремление развиваться</span>
-                    <span class="skills__skill">Умею доносить информацию</span>
+                    <span class="skills__skill">Умение доносить информацию</span>
                 </div>
             </article>
             <article class="skills__block">
@@ -122,13 +129,15 @@
                 <div class="skills__items skills__hard-items">
                     <span class="skills__skill">Html</span>
                     <span class="skills__skill">Css</span>
-                    <span class="skills__skill">Pug</span>
                     <span class="skills__skill">Sass</span>
                     <span class="skills__skill">Js</span>
+                    <span class="skills__skill">Pug</span>
+                    <span class="skills__skill">БЭМ</span>
+                    <span class="skills__skill">Адаптив</span>
+                    <span class="skills__skill">Семантика</span>
+                    <span class="skills__skill">Figma</span>
                     <span class="skills__skill">Python</span>
                     <span class="skills__skill">SQL</span>
-                    <span class="skills__skill">Figma</span>
-                    <span class="skills__skill">jQuery</span>
                     <span class="skills__skill">Github</span>
                     <span class="skills__skill">Git</span>
                 </div>
@@ -163,7 +172,7 @@
                         <li class="card__resurce">choices-js</li>
                         <li class="card__resurce">JustValidate</li>
                         <li class="card__resurce">БЭМ</li>
-                        <li class="card__resurce">adaptive</li>
+                        <li class="card__resurce">адаптив</li>
                     </ul>
                     <ul class="card__show">
                         <li tabindex="0" class="item_button"><a href="https://saramaxal.github.io/workspace"
@@ -172,7 +181,32 @@
                                 class="card__github-button" target="_blank" tabindex="-1">github >></a></li>
                     </ul>
                 </article>
-
+                <article class="experience__card card">
+                    <h3 class="card__title">
+                        Bug tracking system
+                    </h3>
+                    <div class="card__preview">
+                        <img src="./image/bug tracking system.png" alt="Preview image PyPlanet"
+                            class="card__preview-image">
+                    </div>
+                    <div class="card__description">
+                        Система управления ошибками. Позволяет создавать и редактировать ошибку авторизированному
+                        пользователю.
+                    </div>
+                    <ul class="card__resurces">
+                        <li class="card__resurce">html</li>
+                        <li class="card__resurce">css</li>
+                        <li class="card__resurce">js</li>
+                        <li class="card__resurce">choices-js</li>
+                        <li class="card__resurce">coldfucion</li>
+                        <li class="card__resurce">sql</li>
+                        <li class="card__resurce">figma</li>
+                    </ul>
+                    <ul class="card__show">
+                        <li tabindex="0" class="item_button"><a href="https://github.com/saramaxal/bug_tracking_system"
+                                target="_blank" class="card__show-button" tabindex="-1">github >></a></li>
+                    </ul>
+                </article>
                 <article class="experience__card card">
                     <h3 class="card__title">
                         Burger Cheddar
@@ -225,50 +259,40 @@
                                 class="card__show-button" tabindex="-1">show >></a></li>
                     </ul>
                 </article>
-                <article class="experience__card card">
-                    <h3 class="card__title">
-                        Bug tracking system
-                    </h3>
-                    <div class="card__preview">
-                        <img src="./image/bug tracking system.png" alt="Preview image PyPlanet"
-                            class="card__preview-image">
-                    </div>
-                    <div class="card__description">
-                        Система управления ошибками. Позволяет создавать и редактировать ошибку авторизированному
-                        пользователю. Есть видео демонстрация работы сайта.
-                    </div>
-                    <ul class="card__resurces">
-                        <li class="card__resurce">html</li>
-                        <li class="card__resurce">css</li>
-                        <li class="card__resurce">js</li>
-                        <li class="card__resurce">coldfucion</li>
-                        <li class="card__resurce">figma</li>
-                    </ul>
-                    <ul class="card__show">
-                        <li tabindex="0" class="item_button"><a href="https://github.com/saramaxal/bug_tracking_system"
-                                target="_blank" class="card__show-button" tabindex="-1">github >></a></li>
-                    </ul>
-                </article>
+
             </div>
 
             <h2 class="experience__title">Опыт / <span class="accent">Другое</span></h2>
 
             <ul class="experience__other-items">
                 <li class="experience__other-item">
-                    Проходила стажировку в Robbo в качестве дизайнера. Проводила анализ возможных вариантов форм
-                    обратной связи.
+                    <div class="experience__other-item_circle"></div>
+                    <p class="experience__other-item_text">Проходила стажировку в Robbo в качестве дизайнера. Проводила
+                        анализ возможных вариантов форм
+                        обратной связи.</p>
                 </li>
                 <li class="experience__other-item">
-                    Год вела offline и online занятия по Python в Алгоритмике (для организации учеников администрировала
-                    discord канал).
+                    <div class="experience__other-item_circle"></div>
+                    <p class="experience__other-item_text">
+                        Год вела offline и online занятия по Python в Алгоритмике (для организации учеников
+                        администрировала
+                        discord канал).
+                    </p>
                 </li>
                 <li class="experience__other-item">
-                    Проходила практику в Сахалинском банке Итуруп. Создала интерфейс на Python с использованием PyQt5
-                    для конвертера xls, xlsx в xml (не учебная задача).
+                    <div class="experience__other-item_circle"></div>
+                    <p class="experience__other-item_text">
+                        Проходила практику в Сахалинском банке Итуруп. Создала интерфейс на Python с использованием
+                        PyQt5
+                        для конвертера xls, xlsx в xml (не учебная задача).
+                    </p>
                 </li>
                 <li class="experience__other-item">
-                    Знаю Figma на уровне создания своих компонентов, вариантов, настройки стилей и управления Frame
-                    Layout (поэтому мне будет не сложно работать с макетами для их верстки).
+                    <div class="experience__other-item_circle"></div>
+                    <p class="experience__other-item_text">
+                        Знаю Figma на уровне создания своих компонентов, вариантов, настройки стилей и управления Frame
+                        Layout.
+                    </p>
                 </li>
             </ul>
             <a class="link__nav link-top" href="#about">
